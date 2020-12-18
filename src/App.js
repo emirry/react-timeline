@@ -5,11 +5,11 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 import TimelineEvent from './components/TimelineEvent';
 
-const events = timelineData; //not sure  how to read in json file.
+const events = timelineData.events
 
 function App() {
 
-  console.log(timelineData);
+  console.log(timelineData.events);
 
   // Customize the code below
   return (
