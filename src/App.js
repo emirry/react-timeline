@@ -5,15 +5,10 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 import TimelineEvent from './components/TimelineEvent';
 
-// const timeData = [
-//   {
-//     person: 'Emily',
-//     status: 'Blah Blah',
-//     timeStamp: '3 days ago',
-//   }
-// ]
+const events = timelineData; //not sure  how to read in json file.
 
 function App() {
+
   console.log(timelineData);
 
   // Customize the code below
@@ -23,11 +18,7 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent 
-          person="Emily" 
-          status="Blah" 
-        />
-        {/* <Timestamp /> */}
+        <Timeline events={events} />
       </main>
     </div>
   );
