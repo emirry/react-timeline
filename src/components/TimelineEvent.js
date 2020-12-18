@@ -13,9 +13,11 @@ const TimelineEvent = (props) => {
   )
 
   TimelineEvent.propTypes = {
-    person: PropTypes.string.isRequired,
-    status: PropTypes.string,
-    timeStamp: PropTypes.instanceOf(Date)
+    timelineevent: PropTypes.shape({
+      person: PropTypes.string.isRequired,
+      status: PropTypes.string,
+      timeStamp: PropTypes.instanceOf(Date)
+    })
   }
 };
 
